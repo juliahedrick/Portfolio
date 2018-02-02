@@ -4,10 +4,21 @@ body {
 	font-size: 20px;
 	color: #874C62;
 	text-align: left;
+	line-height: 25px;
 }
 
-h1{
+h1 {
 	text-align: center;
+}
+
+
+h3 {
+	text-decoration: underline;
+}
+
+h4, h5 {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 img {
@@ -26,7 +37,7 @@ img {
 	text-align: center;
 }
 
-.topnav a{
+.topnav a {
 	color: #C98474;
 	font-size: 20px;
 	font-family: Garamond;
