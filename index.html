@@ -78,6 +78,9 @@
           <a href="https://github.com/juliahedrick">
             <i class="fab fa-github"></i>
           </a>
+          <a href="https://github.com/juliahedrick">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -92,7 +95,12 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Engineer Intern</h3>
             <div class="subheading mb-3">Google</div>
-            <p></p>
+            <ul>
+              <li>Collaborated with Google’s internal monitoring system’s Engineering Productivity and Site Reliability Engineering teams to enable easier diagnosis of failures on a data ingestion pipeline.</li>
+              <li>Created new metrics, dashboards, and integration tests.</li>
+              <li>Worked with a multi-threaded pipeline in c++, integration testing frameworks, and database systems.</li>
+              <li>Attended leadership, tech and workplace trainings geared towards supporting women in tech and inclusivity in the workplace.</li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">May 2019 - Present</span>
@@ -151,18 +159,6 @@
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Commack High School</h3>
-            <div class="subheading mb-3">International Baccalaureate Diploma</div>
-            <div>Top Cohort, High Honor Roll</div>
-
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2012 - June 2016</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -206,31 +202,53 @@
         <h2 class="mb-5">Projects</h2>
 
 
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Networks and Protocols</h3>
+            <div class="subheading mb-3">HTTPS Proxy</div>
+            <ul>
+              <li>Built a HTTP proxy that supports the basic GET method, caches responses, handles multiple client connections, enables HTTPS connections and has bandwidth limiting functionality with two other Tufts students.</li>
+              <li>Worked with C, socket programming, and the select system call.</li>
+              <li>Github: https://github.com/wolfep15/NetworksProject</li>
+            </ul>
 
+            <div class="subheading mb-3">File Transport over UDP</div>
+            <ul>
+              <li>Implemented a file transport program using socket programming and UDP protocols.</li>
+              <li>Worked with C, UDP, and socket programming.</li>
+            </ul>
+
+            <div class="subheading mb-3">Chat Application over TCP</div>
+            <ul>
+              <li>Implemented a chat application over TCP that enabled users to send and read chats to/from other users.</li>
+              <li>Used the select system call to allow multiple client connections.</li>
+              <li>Worked with socket programming in C. </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Spring 2019</span>
+          </div>
+        </div>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Machine Architecture and Assembly Language Programming</h3>
-            <div class="subheading mb-3">Job-os</div>
+            <div class="subheading mb-3">Universal Machine Emulation</div>
             <ul>
-              <li>Worked with two other Tufts students to create a website that allowed students to review and look for on campus jobs based on availability, peer reviews, and location.</li>
-              <li>Worked with Javascript, MongoDB, CSS, HTML5, and Bootstrap front end framework.</li>
-              <li>url: https://job-os.herokuapp.com, Github: https://github.com/barieom/job-os</li>
+              <li>Designed and implemented a Turing complete 32 bit virtual machine with 8 registers and segmented memory on a 64 bit machine.</li>
+              <li>Worked in C. Due to Tufts University policy, I am unable to share this work.</li>
             </ul>
 
-            <div class="subheading mb-3">Not-Uber</div>
+            <div class="subheading mb-3">Image Compression</div>
             <ul>
-              <li>Client Side: Worked with Javascript and the Google Maps API to retrieve coordinates of users and display their locations on a map.</li>
-              <li>Sever Side: Created get and post requests to maintain passenger and driver information.</li>
+              <li>Used lossy compression to compress a PPM image.</li>
+              <li>This assignment really solidified bit packing and unpacking strategies as well as floating point arithmetic. </li>
+              <li>Worked in C. Due to school policy, I am unable to share this work.</li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Spring 2018</span>
           </div>
         </div>
-
-
-
-
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Introduction to Web Programming</h3>
@@ -245,6 +263,7 @@
             <ul>
               <li>Client Side: Worked with Javascript and the Google Maps API to retrieve coordinates of users and display their locations on a map.</li>
               <li>Sever Side: Created get and post requests to maintain passenger and driver information.</li>
+              <li>Github: https://github.com/juliahedrick/comp20-jhedrick/tree/master/notuber</li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -257,14 +276,14 @@
             <h3 class="mb-0">Data Structures</h3>
             <div class="subheading mb-3">Gerp - It's Like Grep, But Something is Off</div>
             <ul>
-              <li>Implemented a program that indexed and queried a file directory to all lines with a given word (case insensitive).</li>
-              <li>Used a trie to store words and an array to store information about the file and line.</li>
+              <li>Implemented a program that indexed a file based on words. When queired for a word, the program responds with all lines with the given word (case insensitive).</li>
+              <li>Used a trie to store words and corresponding array indices that held information about the file and line.</li>
             </ul>
 
             <div class="subheading mb-3">Reverse Polish Notation Calculator</div>
             <ul>
-              <li>This program replicates a RPN calculator. It does basic operations like addition, subtraction, multiplication, and division, but it also does things like comparisons and negations.</li>
-              <li>Parsed boolean and code blocks using a stack.</li>
+              <li>This program replicates a RPN calculator. It performs basic operations like addition, subtraction, multiplication, division, comparisons, and negation.</li>
+              <li>Parsed strings containing booleans and code blocks using a stack.</li>
             </ul>
           </div>
           <div class="resume-date text-md-right">
@@ -279,7 +298,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>embroidery, painting, food, keeping all of my plants alive</p>
+        <p>embroidery, painting, good food, trying to keep all of my plants alive</p>
       </div>
     </section>
 
